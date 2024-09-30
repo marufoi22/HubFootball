@@ -3,16 +3,15 @@
 ## 1.業務フロー
 
 **ユニフォーム管理**
-
-作成中
+![alt text](img/Uniform.png)
 
 **役割決定**
 
-作成中
+![alt text](img/Role.png)
 
 **スケジュール管理**
 
-作成中
+![alt text](img/Schedule.png)
 
 ## 2.画面遷移図
 
@@ -24,7 +23,7 @@
 
 ## 4.テーブル定義書（もしくは ER 図）
 
-![alt text](img/image.png)
+![alt text](img/ER.png)
 
 ## 5.システム構成図
 
