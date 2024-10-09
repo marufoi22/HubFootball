@@ -9,10 +9,6 @@
 
 ![alt text](img/Role.png)
 
-**スケジュール管理**
-
-![alt text](img/Schedule.png)
-
 ## 2.画面遷移図
 
 ![image](https://github.com/user-attachments/assets/6adc2cdf-2915-4eb4-b639-3e5cd3b49134)
