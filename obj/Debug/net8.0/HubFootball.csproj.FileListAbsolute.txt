@@ -1,0 +1,10 @@
+/Users/marufoi/Documents/code/HubFootball/obj/Debug/net8.0/HubFootball.csproj.AssemblyReference.cache
+/Users/marufoi/Documents/code/HubFootball/obj/Debug/net8.0/HubFootball.GeneratedMSBuildEditorConfig.editorconfig
+/Users/marufoi/Documents/code/HubFootball/obj/Debug/net8.0/HubFootball.AssemblyInfoInputs.cache
+/Users/marufoi/Documents/code/HubFootball/obj/Debug/net8.0/HubFootball.AssemblyInfo.cs
+/Users/marufoi/Documents/code/HubFootball/obj/Debug/net8.0/HubFootball.csproj.CoreCompileInputs.cache
+/Users/marufoi/Documents/code/HubFootball/obj/Debug/net8.0/HubFootball.MvcApplicationPartsAssemblyInfo.cs
+/Users/marufoi/Documents/code/HubFootball/obj/Debug/net8.0/HubFootball.MvcApplicationPartsAssemblyInfo.cache
+/Users/marufoi/Documents/code/HubFootball/obj/Debug/net8.0/HubFootball.RazorAssemblyInfo.cache
+/Users/marufoi/Documents/code/HubFootball/obj/Debug/net8.0/HubFootball.RazorAssemblyInfo.cs
+/Users/marufoi/Documents/code/HubFootball/obj/Debug/net8.0/HubFootball.sourcelink.json
