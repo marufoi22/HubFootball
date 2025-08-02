@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HubFootball")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d1e52b68fa8bb636a1420993267cd78cbb2dde7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bdf6e6db32ef243590bb12b7a86fe3e5aa5639ce")]
 [assembly: System.Reflection.AssemblyProductAttribute("HubFootball")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HubFootball")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
