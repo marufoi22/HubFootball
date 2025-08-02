@@ -1,0 +1,11 @@
+{
+  "src/main.ts": {
+    "file": "assets/main-qnL-eQu4.js",
+    "name": "main",
+    "src": "src/main.ts",
+    "isEntry": true,
+    "css": [
+      "assets/main-1byZ3dr3.css"
+    ]
+  }
+}
