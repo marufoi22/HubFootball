@@ -20,7 +20,7 @@ RUN npm install
 RUN npm run build
 
 # .NET アプリをパブリッシュ
-WORKDIR /src
+WORKDIR /workspaces
 RUN dotnet publish -c Release -o /app/publish
 
 # ---------- Runtime Stage (.NET) ----------
