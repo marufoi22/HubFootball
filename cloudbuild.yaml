@@ -20,3 +20,5 @@ steps:
           sudo docker rm -f hubfootball || true &&
           sudo docker run -d --name hubfootball --restart always -p 80:8080 asia-northeast1-docker.pkg.dev/$PROJECT_ID/hubfootball-repo/hubfootball:latest
         "
+options:
+  logging: CLOUD_LOGGING_ONLY
