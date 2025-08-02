@@ -7,7 +7,7 @@ RUN apt-get update && \
     curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
     apt-get install -y nodejs
 
-WORKDIR /src
+WORKDIR /workspaces
 
 # 依存関係をコピーして復元
 COPY *.csproj .
@@ -15,7 +15,7 @@ RUN dotnet restore
 
 # ソースをコピーしてフロントエンドビルド
 COPY . .
-WORKDIR /src/ClientApp
+WORKDIR /workspaces/src
 RUN npm install
 RUN npm run build
 
