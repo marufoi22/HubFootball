@@ -299,3 +299,4 @@
 /Users/marufoi/Documents/code/HubFootball/obj/Debug/net9.0/compressed/r8uk3iz6bk-qc9ihi8hf8.gz
 /Users/marufoi/Documents/code/HubFootball/obj/Debug/net9.0/compressed/n73zjhby8r-kp1susuzy0.gz
 /Users/marufoi/Documents/code/HubFootball/obj/Debug/net9.0/compressed/gyylhahzkg-ljig8tyzqz.gz
+/Users/marufoi/Documents/code/HubFootball/obj/Debug/net9.0/HubFootball.sourcelink.json

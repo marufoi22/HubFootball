@@ -1,5 +1,12 @@
 # ---------- Build Stage (.NET + Node) ----------
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+
+# Node.jsをインストール
+RUN apt-get update && \
+    apt-get install -y curl && \
+    curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
+    apt-get install -y nodejs
+
 WORKDIR /src
 
 # 依存関係をコピーして復元
@@ -17,7 +24,7 @@ WORKDIR /src
 RUN dotnet publish -c Release -o /app/publish
 
 # ---------- Runtime Stage (.NET) ----------
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS runtime
 WORKDIR /app
 COPY --from=build /app/publish .
 ENTRYPOINT ["dotnet", "HubFootball.dll"]
