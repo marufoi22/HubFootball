@@ -1,24 +1,20 @@
 steps:
-  # 1. Build Docker image
+  # 1. Build image
   - name: 'gcr.io/cloud-builders/docker'
-    args:
-      ['build', '-t', 'asia-northeast1-docker.pkg.dev/$PROJECT_ID/hubfootball-repo/hubfootball:latest', '.']
+    args: ['build', '-t', 'asia-northeast1-docker.pkg.dev/$PROJECT_ID/hubfootball-repo/hubfootball:latest', '.']
 
   # 2. Push to Artifact Registry
   - name: 'gcr.io/cloud-builders/docker'
-    args:
-      ['push', 'asia-northeast1-docker.pkg.dev/$PROJECT_ID/hubfootball-repo/hubfootball:latest']
+    args: ['push', 'asia-northeast1-docker.pkg.dev/$PROJECT_ID/hubfootball-repo/hubfootball:latest']
 
-  # 3. SSH to VM and deploy container
-  - name: 'gcr.io/cloud-builders/gcloud'
-    entrypoint: bash
+  # 3. Deploy to Cloud Run (例: サーバーレスで運用)
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
     args:
-      - '-c'
-      - |
-        gcloud compute ssh VM_USER@instance-20250719-053329 --zone=asia-northeast1-b --command "
-          sudo docker pull asia-northeast1-docker.pkg.dev/$PROJECT_ID/hubfootball-repo/hubfootball:latest &&
-          sudo docker rm -f hubfootball || true &&
-          sudo docker run -d --name hubfootball --restart always -p 80:8080 asia-northeast1-docker.pkg.dev/$PROJECT_ID/hubfootball-repo/hubfootball:latest
-        "
-options:
-  logging: CLOUD_LOGGING_ONLY
+      [
+        'run', 'deploy', 'hubfootball',
+        '--image', 'asia-northeast1-docker.pkg.dev/$PROJECT_ID/hubfootball-repo/hubfootball:latest',
+        '--region', 'asia-northeast1',
+        '--platform', 'managed',
+        '--allow-unauthenticated'
+      ]
